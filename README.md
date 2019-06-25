@@ -1,3 +1,3 @@
 # Butler Feature Book
 
-Currently include only Inventory Features
+Currently includes only Inventory Features
