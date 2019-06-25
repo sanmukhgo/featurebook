@@ -7,9 +7,7 @@
 
 {% block content %}
 <br><br>
-<ul class="home-list">
-    <li>
-        <a class="home" href="{% url 'toc:heading_list' %}">Table of Contents</a>
-    </li>
-</ul>
+<span class="home-list">
+    <a class="home" href="{% url 'toc:heading_list' %}">Table of Contents</a>
+</span>
 {% endblock %}
