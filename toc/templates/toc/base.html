@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/toc.css' %}">
+
+    <script type="text/javascript" src="{% static 'js/toc.js' %}"></script>
+</head>
+<title>
+    Feature Book
+</title>
+
+<body>
+    <div class="main-heading">
+        Inventory Features
+    </div>
+    {% block content %}
+    {% endblock%}
+</body>
+
+</html>
