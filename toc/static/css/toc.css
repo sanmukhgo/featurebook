@@ -1,0 +1,74 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+a.home {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(228, 23, 23);
+    box-shadow: 0 5px 0 darkred;
+    color: white;
+    padding: 0.6em 1.5em;
+    margin-left: 1em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-heading {
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 190%;
+    padding: 8px;
+    font-weight: bold;
+    color: whitesmoke;
+    position: relative;
+    background-color: rgb(226, 118, 17);
+    box-shadow: 0px 3px 6px #757373;
+}
+
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 160%;
+    font-weight: bold;
+    text-decoration: underline rgb(2, 2, 92);
+    color: darkblue;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+ul.toc-list {
+    list-style-type: square;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul.home {
+    list-style-type: square;
+}
+
+li.h2 {
+    margin-left: 1em;
+    font-size: 120%;
+}
+
+li.h3 {
+    margin-left: 3em;
+    font-size: 115%;
+}
+
+li.h4 {
+    margin-left: 5em;
+    font-size: 110%;
+}
+
+li.h5 {
+    margin-left: 7em;
+    font-size: 105%;
+}
+
+li.h6 {
+    margin-left: 9em;
+    font-size: 100%;
+}
