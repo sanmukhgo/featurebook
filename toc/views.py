@@ -5,11 +5,6 @@ import sys
 #sys.path.insert(0, '/path/to/featurebook/module')
 
 
-def home(request):
-
-    return render(request, 'toc/home.html', {})
-
-
 def heading_list(request):
 
     Heading.objects.all().delete()

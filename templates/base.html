@@ -4,20 +4,21 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/toc.css' %}">
-
-    <script type="text/javascript" src="{% static 'js/toc.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block css %}
+    {% endblock css %}
+    <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
 </head>
 <title>
     Feature Book
 </title>
 
 <body>
-    <div class="main-heading">
+    <div class="base-heading">
         Inventory Features
     </div>
     {% block content %}
-    {% endblock%}
+    {% endblock content%}
 </body>
 
 </html>

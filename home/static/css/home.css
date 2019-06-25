@@ -1,0 +1,20 @@
+a.home {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(22, 245, 215);
+    box-shadow: 0 5px 0 rgb(5, 175, 161);
+    color: black;
+    padding: 0.5em 1.5em;
+    margin-left: 1em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.home:hover {
+    background-color: rgb(156, 240, 229);
+}
+
+ul.home-list {
+    list-style-type: square;
+    font-family: 'Montserrat', sans-serif;
+}

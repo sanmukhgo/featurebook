@@ -1,4 +1,9 @@
-{% extends 'toc/base.html' %}
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/toc.css' %}">
+{% endblock css %}
 
 {% block content %}
 <div id="list">
@@ -12,5 +17,4 @@
         {% endfor %}
     </ul>
 </div>
-
-{% endblock %}
+{% endblock content%}

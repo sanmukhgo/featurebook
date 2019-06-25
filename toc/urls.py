@@ -1,7 +1,10 @@
 from django.urls import path
 from . import views
 
+app_name = 'toc'
+
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('toc/', views.heading_list, name='heading_list'),
+    ### All URL prefixed by toc/ ###
+    
+    path('', views.heading_list, name='heading_list'),
 ]
