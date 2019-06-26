@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('home.urls', namespace='home')),
     path('toc/', include('toc.urls', namespace='toc')),
     path('links/', include('links.urls', namespace='links')),
+    path('configtable/', include('configurations.urls', namespace='configtable')),
 ]

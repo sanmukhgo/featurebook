@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'toc',
     'home',
     'links',
+    'configurations',
 ]
 
 MIDDLEWARE = [
