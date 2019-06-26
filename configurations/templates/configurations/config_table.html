@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/config_table.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div class="table-div">
+    <table class="tbl">
+        <thead>
+            <tr>
+                <th style="width: 17%">
+                    Source
+                </th>
+                <th>Configuration</th>
+                <th style="width: 30%;">
+                    Description
+                </th>
+                <th>Values</th>
+                <th>Default</th>    
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in ctable %}
+            <tr>
+                <td> {{ row.source }} </td>
+                <td style="font-size: 110%"> 
+                <pre>{{ row.configuration }}</pre> 
+                </td>
+                <td> 
+                    {{ row.description }} 
+                </td>
+                <td> {{ row.values }} </td>
+                <td> {{ row.default }} </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

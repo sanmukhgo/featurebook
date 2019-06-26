@@ -1,0 +1,37 @@
+.table-div {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table thead th {
+    position: sticky;
+    top: -0.15em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110%;
+    background-color: rgb(226, 226, 226);
+    border: 0.15em solid rgb(182, 177, 177);
+    align-content: flex-start;
+    color: rgb(7, 7, 95);
+    padding: 0.7%;
+}
+
+table tbody td {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(31, 30, 30);
+    font-size: 90%;
+    border: 0.15em solid rgb(182, 177, 177);
+    word-wrap: break-word;
+    padding: 0.7%;
+}
+
+pre {
+    white-space: pre-wrap;
+}
