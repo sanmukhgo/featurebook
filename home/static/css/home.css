@@ -1,4 +1,4 @@
-a.home {
+a.item {
     font-family: 'Karla', sans-serif;
     font-size: 130%;
     font-weight: bold;
@@ -6,17 +6,12 @@ a.home {
     box-shadow: 0 5px 0 rgb(6, 3, 150);
     color: whitesmoke;
     padding: 0.5em 1.5em;
-    margin-left: 1em;
+    margin-left: 1.5em;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-a.home:hover {
+a.item:hover {
     background-color: rgb(25, 223, 196);
-}
-
-.home-list {
-    margin-left: 1em;
-    list-style-type: square;
 }

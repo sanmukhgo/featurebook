@@ -3,18 +3,25 @@
 from .reqparse import soup
 
 
-def links(key='http'):
-    """ Returns all links which starts with key."""
+def links(key=''):
+    """
+    Returns a list of dict of all links starting with 'key'.
+
+        .url: Page URL
+        .text: URL text 
+    """
 
     links = []
     for i in a_list:
         if i['href'].startswith(key):
-            links.append(i['href'])
+            url = i['href']
+            text = i.text.strip()
+            links.append({"url": url, "text": text})
     return links
 
 
 def print_links(key='http'):
-    """Prints all links which starts with key."""
+    """Prints all link data which starts with key."""
 
     lst = links(key)
     for i in lst:

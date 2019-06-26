@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/links.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div id="list">
+    <span class="heading">
+        All Links
+    </span>
+    <br>
+    <ul class="list">
+        {% for l in links %}
+            <li class="link">
+                <a href="{{ l.url }}">
+                    {{ l.show_link }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock content%}

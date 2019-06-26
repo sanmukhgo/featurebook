@@ -4,7 +4,7 @@ from . import views
 app_name = 'toc'
 
 urlpatterns = [
-    ### All URL prefixed by toc/ ###
+    ### All URLs prefixed by toc/ ###
     
     path('', views.heading_list, name='heading_list'),
 ]

@@ -1,0 +1,34 @@
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 160%;
+    font-weight: bold;
+    text-decoration: underline rgb(2, 2, 92);
+    color: darkblue;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+ul.list {
+    list-style-type: square;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 160%;
+    font-weight: bold;
+    text-decoration: underline rgb(2, 2, 92);
+    color: darkblue;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+ul.toc-list {
+    list-style-type: square;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    margin-left: 2em;
+    font-size: 120%;
+}
