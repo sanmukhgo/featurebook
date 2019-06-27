@@ -16,6 +16,6 @@ class ConfigTable(models.Model):
         verbose_name_plural = ("ConfigurationTables")
 
     def __str__(self):
-        return self.name
+        return self.source
 
 

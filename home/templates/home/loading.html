@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock css %}
+
+{% block content %}
+<br><br>
+<div class="loading">
+    Loading Database...
+    <br>
+    Please wait patiently this might take a while.
+</div>
+{% endblock %}

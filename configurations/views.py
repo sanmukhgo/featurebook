@@ -3,7 +3,7 @@ from module import configtable
 from .models import ConfigTable
 
 
-def config_table(request):
+def create_config_table():
 
     ConfigTable.objects.all().delete()
 
@@ -16,6 +16,12 @@ def config_table(request):
                                    description=table['Description'][i],
                                    values=table['Values'][i],
                                    default=table['Default'][i])
-    ctable = ConfigTable.objects.all()
 
+
+def config_table(request):
+
+    if ConfigTable.objects.all().count() == 0:
+        create_config_table()
+
+    ctable = ConfigTable.objects.all()
     return render(request, 'configurations/config_table.html', {'ctable': ctable})

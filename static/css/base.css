@@ -7,6 +7,7 @@ html {
 
 .base-heading {
     text-align: center;
+    width: 100%;
     font-family: 'Arvo', serif;
     font-size: 190%;
     padding: 8px;
@@ -15,4 +16,9 @@ html {
     position: relative;
     background-color: rgb(226, 118, 17);
     box-shadow: 0px 3px 6px #757373;
+}
+
+#base-heading {
+    color: whitesmoke;
+    text-decoration-line: none;
 }

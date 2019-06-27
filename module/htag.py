@@ -3,6 +3,22 @@
 from .parsepage import soup
 
 
+def _get_htags():
+    """Returns list of all h-tags (unformatted). """
+
+    """
+    div: The div-tag containing all content.
+    hlist: List of particular h-tags searched for in div.
+    headings: List of found headings.
+    """
+
+    div = soup.find('div', {'id': 'main'})
+    hlist = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
+    htags = div.find_all(hlist)
+
+    return htags
+
+
 def headings():
     """
     Returns a list of dict of all headings with their tag.
@@ -11,8 +27,10 @@ def headings():
         .text: Text inside tag 
     """
 
+    htags=_get_htags()
+
     headings = []
-    for h in _htags:
+    for h in htags:
         tag = h.name
         text = h.text.strip()
         headings.append({"tag": tag, "text": text})
@@ -32,32 +50,23 @@ def print_headings():
     spc: 1 tab space 
     """
 
-    hlen = len(_htags)
+    htags=_get_htags()
+
+    hlen = len(htags)
     spc = "   "
     for i in range(hlen):
-        hn1 = int(_htags[i].name[1])
+        hn1 = int(htags[i].name[1])
         if i < hlen-1:         # boundary check
-            hn2 = int(_htags[i+1].name[1])
+            hn2 = int(htags[i+1].name[1])
 
         indent = spc*(hn1-1)
         print(indent, end="")  # puts indentation
-        txt = (_htags[i].text.strip())
+        txt = (htags[i].text.strip())
         print(txt)             # puts heading
         if hn1 > hn2:
             print()            # puts newline
 
 
-"""
-div: The div-tag containing all content.
-hlist: List of particular h-tags searched for in div.
-headings: List of found headings.
-"""
-_div = soup.find('div', {'id': 'main'})
-_hlist = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
-_htags = _div.find_all(_hlist)
-
 """ Prints all headings if invoked directly."""
 if __name__ == "__main__":
-    h=headings()
-    print(h)
-    #print_headings()
+    print_headings()

@@ -2,14 +2,21 @@
 
 from .parsepage import soup
 
+def get_a_list():
+    """Returns list of all <a> tags."""
 
-def links(key=''):
+    a_list = soup.find_all('a', href=True)
+    return a_list
+
+def links(key='http'):
     """
-    Returns a list of dict of all links starting with 'key'.
+    Returns a list of dict of all links.
 
         .url: Page URL
         .text: URL text 
     """
+
+    a_list=get_a_list()
 
     links = []
     for i in a_list:
@@ -27,13 +34,6 @@ def print_links(key='http'):
     for i in lst:
         print(i)
 
-
-""" 
-a_list: List of all <a> tags.
-links(): Returns list of direct http links.
-print_links(): Prints all http links
-"""
-a_list = soup.find_all('a', href=True)
 
 """ Prints all links containing key if invoked directly."""
 if __name__ == "__main__":
