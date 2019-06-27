@@ -1,6 +1,6 @@
 """ Collects all hyperlinks to external pages in Inventory Features page."""
 
-from .reqparse import soup
+from .parsepage import soup
 
 
 def links(key=''):

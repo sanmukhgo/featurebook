@@ -1,6 +1,6 @@
 """Collects all h-tags of Inventory Features page."""
 
-from .reqparse import soup
+from .parsepage import soup
 
 
 def headings():
